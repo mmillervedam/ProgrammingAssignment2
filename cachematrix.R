@@ -1,8 +1,8 @@
-## This file contains two functions which together allow the user
-## to calculate and cashe the inverse of a square invertible matrix. 
+## This file contains two functions which together allow the user to calculate 
+## and cache the inverse of a square invertible matrix. 
 
-## This function creates a special matrix object that can cache its inverse. It 
-## takes a regular matrix as its argument and returns a list of functions which
+## This function creates a special matrix object that can cache its inverse. 
+## Its argument is a regular matrix and it returns a list of functions which
 ## can be performed on this object including setting and getting the inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -20,9 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function checks to see if the inverse matrix has been previously calculated.
-## If not, the function calculates (and stores) it. It takes as its argument a
-## matrix of the type created by the function above.
+## This function returns the inverse of a matrix object created by the function
+## above by first checking to see if an inverse has been previously cached.
+## If not, the function calculates (and stores) the appropriate inverse.
 
 cacheSolve <- function(x, ...) {
         inverse <- x$getinverse()
