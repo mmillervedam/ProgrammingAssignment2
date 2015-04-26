@@ -3,7 +3,7 @@
 
 ## This function creates a special matrix object that can cache its inverse. It 
 ## takes a regular matrix as its argument and returns a list of functions which
-## can be performed on this object including setting and getting the mean.
+## can be performed on this object including setting and getting the inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
       inverse <- NULL 
